@@ -5,7 +5,19 @@ const port = Number(process.env.PORT) || 3000;
 const server = http.createServer((request, response) => {
   if (request.url === "/health") {
     response.writeHead(200, { "Content-Type": "application/json; charset=utf-8" });
-    response.end(JSON.stringify({ status: "ok" }));
+    response.end(JSON.stringify({ status: "okkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk" }));
+    return;
+  }
+
+    if (request.url === "/rsoto") {
+    response.writeHead(200, { "Content-Type": "application/json; charset=utf-8" });
+    response.end(JSON.stringify({ status: "EN LA URL RSOTO" }));
+    return;
+  }
+
+  if (request.url === "/pfuentes") {
+    response.writeHead(200, { "Content-Type": "application/json; charset=utf-8" });
+    response.end(JSON.stringify({ status: "Patricia" }));
     return;
   }
 
